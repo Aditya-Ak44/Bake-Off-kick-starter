@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
 function App() {
   return (
     <GameProvider>
-      <Router>
+      <Router basename="/Bake-Off-kick-starter">
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
