@@ -1,13 +1,17 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Bake-Off-kick-starter/',
+  base: '/Bake-Off-kick-starter/', // Replace with your actual repo name
   resolve: {
     alias: {
-      "@": path.resolve("root", "./src"),
+      "@": path.resolve(__dirname, "./src"),
     },
-  }, // Replace with your repo name
+  },
 })
