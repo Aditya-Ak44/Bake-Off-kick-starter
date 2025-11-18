@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Use '/' for user.github.io or '/repo-name/' for project pages
+  base: '/Bake-Off-kick-starter/', // Must match your GitHub repository name exactly
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
