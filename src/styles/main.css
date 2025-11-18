@@ -1,0 +1,90 @@
+/* Premium Bakery Theme */
+:root {
+  /* Colors */
+  --color-flour-white: #FDFBF7;
+  --color-dough: #F2E8D5;
+  --color-burnt-orange: #CC5500;
+  --color-golden-crust: #D4A017;
+  --color-sage-green: #8A9A5B;
+  --color-chocolate-dark: #3E2723;
+  --color-berry-red: #C2185B;
+  --color-text-main: #2D2D2D;
+  --color-text-light: #5D5D5D;
+
+  /* Typography */
+  --font-family-main: 'Outfit', sans-serif;
+  --font-family-display: 'Fraunces', serif; /* For headings */
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+
+  /* Borders & Shadows */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-soft: 0 4px 20px rgba(62, 39, 35, 0.08);
+  --shadow-hover: 0 8px 30px rgba(62, 39, 35, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--color-flour-white);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  color: var(--color-chocolate-dark);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+button {
+  font-family: var(--font-family-main);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.btn-primary {
+  background-color: var(--color-burnt-orange);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  background-color: #B34400;
+}
+
+.card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(0,0,0,0.05);
+}
